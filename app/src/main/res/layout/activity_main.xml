@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e3e3e3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:background="@drawable/box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#4d4a4a"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginTop="50sp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/daysBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_calen"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="#4d4a4a"
+        android:backgroundTint="#FFA68E"
+        android:layout_gravity="center_horizontal">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20sp"
+        >
+
+        <CalendarView
+            android:id="@+id/cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_calen">
+
+        </CalendarView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First"
+        android:fontFamily="sans-serif-thin"
+        android:background="#FFF"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="90dp"
+        >
+
+    </Button>
+
+        <TextView
+            android:id="@+id/firstDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="10dp"
+            android:height="40dp"
+            android:textColor="#000"
+            android:fontFamily="sans-serif-thin"
+            android:background="@drawable/box"
+            android:textSize="20sp">
+
+        </TextView>
+
+    <Button
+        android:id="@+id/sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/first"
+        android:layout_alignTop="@+id/first"
+        android:layout_alignBottom="@+id/first"
+        android:layout_marginStart="60dp"
+        android:fontFamily="sans-serif-thin"
+        android:background="#FFF"
+        android:text="Second">
+
+    </Button>
+
+        <TextView
+            android:id="@+id/secDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sec"
+            android:layout_alignStart="@+id/sec"
+            android:layout_marginStart="-8dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/firstDate"
+            android:height="40dp"
+            android:background="@drawable/box"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="#000"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Date Calculator</string>
+    <string name="title">Pick two dates to calculate days in between… </string>
+    <string name="dev">Developer</string>
+    <string name="main">Main Menu</string>
+    <string name="name">Evelyn Hernandez</string>
+    <string name="email">raint1021@gmail.com</string>
+</resources>

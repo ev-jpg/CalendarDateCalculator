@@ -1,0 +1,10 @@
+App allows user to select two different dates and get a calculation
+for the number of days between those dates.
+
+Results: Gained more knowledge of how to handle xml code and java code
+in android studio. Used Buttons, Calendar, Vector Asset (for icon),
+Image asset to change app image. Gained more knowledge of using
+instances and switching between activities.
+
+Struggles: As a beginner, learning to work with xml and all the layouts,
+as well as how to use the objects and libraries within android studio.
